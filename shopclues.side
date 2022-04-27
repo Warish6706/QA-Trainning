@@ -1,0 +1,1151 @@
+{
+  "id": "e21052f4-8078-4779-bc63-ceb486048855",
+  "version": "2.0",
+  "name": "shopclues",
+  "url": "https://bazaar.shopclues.com",
+  "tests": [{
+    "id": "6ecb2c9f-b81f-4217-b973-fd6e044204f6",
+    "name": "Register",
+    "commands": [{
+      "id": "68961e07-d8d6-4131-982b-0a2d59eecb45",
+      "comment": "",
+      "command": "open",
+      "target": "/?__ar=Y",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b00c2354-017f-43ce-8303-747b64c53ecf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1127x871",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0ce29c8b-af85-463b-87d6-0f4a8a2216bc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign In",
+      "targets": [
+        ["linkText=Sign In", "linkText"],
+        ["css=#sign-in > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign In')]", "xpath:link"],
+        ["xpath=//a[@onclick='loginPopup();']", "xpath:attributes"],
+        ["xpath=//li[@id='sign-in']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[12]", "xpath:href"],
+        ["xpath=//div[4]/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89df9232-148a-4ba5-8297-1fe956460779",
+      "comment": "",
+      "command": "click",
+      "target": "css=.moe-btn-close",
+      "targets": [
+        ["css=.moe-btn-close", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "695a7c7d-5f15-4082-b2fc-905ee8516e95",
+      "comment": "",
+      "command": "click",
+      "target": "id=reg_tab",
+      "targets": [
+        ["id=reg_tab", "id"],
+        ["linkText=REGISTER", "linkText"],
+        ["css=#reg_tab", "css:finder"],
+        ["xpath=//a[contains(text(),'REGISTER')]", "xpath:link"],
+        ["xpath=//a[@id='reg_tab']", "xpath:attributes"],
+        ["xpath=//div[@id='loginModelBox']/div/div[2]/div/div/h2[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[7]", "xpath:href"],
+        ["xpath=//h2[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'REGISTER')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3e86358-cf39-43de-a164-691278914d43",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.user_login_desktop", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff399bd0-4964-44d5-bfa5-e9392fff02ea",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Register",
+      "targets": [
+        ["linkText=Register", "linkText"],
+        ["name=register", "name"],
+        ["css=.btn_size > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Register')]", "xpath:link"],
+        ["xpath=//a[@name='register']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[6]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[9]", "xpath:href"],
+        ["xpath=//div[6]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e061058-d759-447d-b7d5-753faab92515",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.error_text:nth-child(4) > .email_err",
+      "targets": [
+        ["css=.error_text:nth-child(4) > .email_err", "css:finder"],
+        ["xpath=//div[@id='register']/form/fieldset/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Please enter your email id.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your email id."
+    }, {
+      "id": "374a3621-5299-42b7-b0cb-e1118a0a251a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.s_row:nth-child(3) .error_span_text",
+      "targets": [
+        ["css=.s_row:nth-child(3) .error_span_text", "css:finder"],
+        ["xpath=//div[@id='register']/form/fieldset/div[3]/div/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Please enter your mobile number.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your mobile number."
+    }, {
+      "id": "1046da63-dee2-47aa-8080-62f02bb81077",
+      "comment": "",
+      "command": "click",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.s_row:nth-child(3) > .label_jump", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19b1afe1-1042-47a9-bab6-86ffe2a21b77",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.user_login_desktop", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "234d00f7-35e8-43ae-af68-b2593c8252c2",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.user_login_desktop", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a45acaf4-ba3f-4205-9bd3-7853791a175f",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.user_login_desktop", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/input", "xpath:position"]
+      ],
+      "value": "warish"
+    }, {
+      "id": "8a406b2f-3da7-412f-877e-ccf4f8b6c95c",
+      "comment": "",
+      "command": "click",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.s_row:nth-child(3) > .label_jump", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "886ba01f-6947-4c70-844e-06086d5297ca",
+      "comment": "",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.s_row:nth-child(3) > .label_jump", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div[3]/input", "xpath:position"]
+      ],
+      "value": "7867866787"
+    }, {
+      "id": "217ce9c2-00f0-4b80-aa3c-02e99afb463e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Register",
+      "targets": [
+        ["linkText=Register", "linkText"],
+        ["name=register", "name"],
+        ["css=.btn_size > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Register')]", "xpath:link"],
+        ["xpath=//a[@name='register']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[6]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[9]", "xpath:href"],
+        ["xpath=//div[6]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aee964bf-6d97-489a-a8c2-6792e8e50c09",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.error_text:nth-child(4) > .email_err",
+      "targets": [
+        ["css=.error_text:nth-child(4) > .email_err", "css:finder"],
+        ["xpath=//div[@id='register']/form/fieldset/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Invalid email id.')]", "xpath:innerText"]
+      ],
+      "value": "Invalid email id."
+    }, {
+      "id": "bd08fcb0-a6ed-40e6-9fa6-77d2271b42d0",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.user_login_desktop", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c169f8d8-134b-4d4d-851a-30d289040db5",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.user_login_desktop", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47c4df81-60d4-47f2-89d1-e633a890719f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Register",
+      "targets": [
+        ["linkText=Register", "linkText"],
+        ["name=register", "name"],
+        ["css=.btn_size > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Register')]", "xpath:link"],
+        ["xpath=//a[@name='register']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[6]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[9]", "xpath:href"],
+        ["xpath=//div[6]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1dd61af3-4b8e-4374-a466-4dfc0d887677",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.error_text:nth-child(4) > .email_err",
+      "targets": [
+        ["css=.error_text:nth-child(4) > .email_err", "css:finder"],
+        ["xpath=//div[@id='register']/form/fieldset/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Please enter your email id.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your email id."
+    }, {
+      "id": "da2a143b-b304-45fe-9dba-33201ea77c59",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.user_login_desktop", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee8a3a14-2880-4d0d-967a-3bccf083fb5d",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.user_login_desktop", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/input", "xpath:position"]
+      ],
+      "value": "warish@gmail.com"
+    }, {
+      "id": "02980f23-c8ae-410a-b0a3-5a9c7d961304",
+      "comment": "",
+      "command": "click",
+      "target": "css=#autocomplete-list li",
+      "targets": [
+        ["css=#autocomplete-list li", "css:finder"],
+        ["xpath=//div[@id='autocomplete-list']/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'gmail.com')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b98e6798-2656-4509-aa37-beb53bb7f02b",
+      "comment": "",
+      "command": "click",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.s_row:nth-child(3) > .label_jump", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b07154a-3c06-419d-8ba0-8e8e0522d6b2",
+      "comment": "",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.s_row:nth-child(3) > .label_jump", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6245a2b-5528-49e5-92f6-fc50c44b50f8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Register",
+      "targets": [
+        ["linkText=Register", "linkText"],
+        ["name=register", "name"],
+        ["css=.btn_size > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Register')]", "xpath:link"],
+        ["xpath=//a[@name='register']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[6]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[9]", "xpath:href"],
+        ["xpath=//div[6]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "df91d596-aa38-4a0c-93ad-fcee93b67755",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.s_row:nth-child(3) .error_span_text",
+      "targets": [
+        ["css=.s_row:nth-child(3) .error_span_text", "css:finder"],
+        ["xpath=//div[@id='register']/form/fieldset/div[3]/div/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Please enter your mobile number.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your mobile number."
+    }, {
+      "id": "a95a79e1-30a3-4409-82ef-42f46c6b3812",
+      "comment": "",
+      "command": "click",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.s_row:nth-child(3) > .label_jump", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59183a71-06c9-4864-9dbf-65cf61f54188",
+      "comment": "",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.s_row:nth-child(3) > .label_jump", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div[3]/input", "xpath:position"]
+      ],
+      "value": "9900000000"
+    }, {
+      "id": "11427c4e-f9a1-4b55-aaa7-e8eb4d2317f9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Register",
+      "targets": [
+        ["linkText=Register", "linkText"],
+        ["name=register", "name"],
+        ["css=.btn_size > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Register')]", "xpath:link"],
+        ["xpath=//a[@name='register']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[6]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[9]", "xpath:href"],
+        ["xpath=//div[6]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "283c86ea-f102-4266-8e74-ab25064d5cc7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.error_text:nth-child(4) > .email_err",
+      "targets": [
+        ["css=.error_text:nth-child(4) > .email_err", "css:finder"],
+        ["xpath=//div[@id='register']/form/fieldset/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Account already exists with this email. Please login.')]", "xpath:innerText"]
+      ],
+      "value": "Account already exists with this email. Please login."
+    }, {
+      "id": "d10fc640-1a9e-46a9-8483-2011586696d7",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.user_login_desktop", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bacabb0-362e-416d-b9df-b3177a7327da",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.user_login_desktop", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/input", "xpath:position"]
+      ],
+      "value": "7808689033"
+    }, {
+      "id": "194abd06-6a1f-4106-ac1a-72c6eea4587e",
+      "comment": "",
+      "command": "click",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.s_row:nth-child(3) > .label_jump", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f754bd45-3a1d-4f2f-9ed3-4ace35bc962f",
+      "comment": "",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.s_row:nth-child(3) > .label_jump", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9115ea2-0d7b-473d-ac63-3c589cd00fea",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Register",
+      "targets": [
+        ["linkText=Register", "linkText"],
+        ["name=register", "name"],
+        ["css=.btn_size > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Register')]", "xpath:link"],
+        ["xpath=//a[@name='register']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[6]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[9]", "xpath:href"],
+        ["xpath=//div[6]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dc84ea1-282d-4112-9585-301b39496662",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.error_text:nth-child(4) > .email_err",
+      "targets": [
+        ["css=.error_text:nth-child(4) > .email_err", "css:finder"],
+        ["xpath=//div[@id='register']/form/fieldset/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Invalid email id.')]", "xpath:innerText"]
+      ],
+      "value": "Invalid email id."
+    }, {
+      "id": "98e500ba-1377-4dba-a417-d05820819bf9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.s_row:nth-child(3) .error_span_text",
+      "targets": [
+        ["css=.s_row:nth-child(3) .error_span_text", "css:finder"],
+        ["xpath=//div[@id='register']/form/fieldset/div[3]/div/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Please enter your mobile number.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your mobile number."
+    }, {
+      "id": "74ea041d-5c5c-4f22-886b-c6b04669f29e",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.user_login_desktop", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b03d8ef5-d622-4de9-aed4-a33f1025e177",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.user_login_desktop", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/input", "xpath:position"]
+      ],
+      "value": "qqq@ggg.com"
+    }, {
+      "id": "ace7eeec-fbfd-486b-a256-741ed86d8cff",
+      "comment": "",
+      "command": "click",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.s_row:nth-child(3) > .label_jump", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5b75792-29b5-4496-a95b-01ce8a43cb9a",
+      "comment": "",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.s_row:nth-child(3) > .label_jump", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div[3]/input", "xpath:position"]
+      ],
+      "value": "1200000000"
+    }, {
+      "id": "567bbce1-8cdc-4f22-9040-93b6add6c080",
+      "comment": "",
+      "command": "click",
+      "target": "id=register_with_password",
+      "targets": [
+        ["id=register_with_password", "id"],
+        ["name=register_with_password", "name"],
+        ["css=#register_with_password", "css:finder"],
+        ["xpath=//input[@id='register_with_password']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "185a413c-6e4c-49da-b189-55ea88f9eeb4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Register",
+      "targets": [
+        ["linkText=Register", "linkText"],
+        ["name=register", "name"],
+        ["css=.btn_size > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Register')]", "xpath:link"],
+        ["xpath=//a[@name='register']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[6]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[9]", "xpath:href"],
+        ["xpath=//div[6]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed4c4cc3-0792-4207-9312-225cc27ebede",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.register_password .error_span_text",
+      "targets": [
+        ["css=.register_password .error_span_text", "css:finder"],
+        ["xpath=//div[@id='register']/form/fieldset/div[4]/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Please enter your password.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your password."
+    }, {
+      "id": "e158fa54-41aa-45e4-97c8-9267a2dd4569",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form_section",
+      "targets": [
+        ["css=.form_section", "css:finder"],
+        ["xpath=//div[@id='loginModelBox']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[7]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "089169d6-6d3c-4835-bb27-f81eac421bd1",
+      "comment": "",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.s_row:nth-child(3) > .label_jump", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d331de8-ea29-4cd9-8455-f09f8409cd40",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form_section",
+      "targets": [
+        ["css=.form_section", "css:finder"],
+        ["xpath=//div[@id='loginModelBox']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[7]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c48a1749-14a4-4e0c-a73c-a8fb121cf20b",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.user_login_desktop", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d360ef67-7d53-4788-a932-cf950cab85cd",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Register",
+      "targets": [
+        ["linkText=Register", "linkText"],
+        ["name=register", "name"],
+        ["css=.btn_size > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Register')]", "xpath:link"],
+        ["xpath=//a[@name='register']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[6]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[9]", "xpath:href"],
+        ["xpath=//div[6]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef6e56fb-b556-46f5-b2ac-da9cc6b9c427",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Register",
+      "targets": [
+        ["linkText=Register", "linkText"],
+        ["name=register", "name"],
+        ["css=.btn_size > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Register')]", "xpath:link"],
+        ["xpath=//a[@name='register']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[6]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[9]", "xpath:href"],
+        ["xpath=//div[6]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a53e108-d343-47d3-85e7-104da72360c2",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Register",
+      "targets": [
+        ["linkText=Register", "linkText"],
+        ["name=register", "name"],
+        ["css=.btn_size > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Register')]", "xpath:link"],
+        ["xpath=//a[@name='register']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[6]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[9]", "xpath:href"],
+        ["xpath=//div[6]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "11be757f-8bdc-4eec-a481-a98f582df5a7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.error_text:nth-child(4) > .email_err",
+      "targets": [
+        ["css=.error_text:nth-child(4) > .email_err", "css:finder"],
+        ["xpath=//div[@id='register']/form/fieldset/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Please enter your email id.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your email id."
+    }, {
+      "id": "16382c57-aaae-4525-936d-24fb812044a0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.s_row:nth-child(3) .error_span_text",
+      "targets": [
+        ["css=.s_row:nth-child(3) .error_span_text", "css:finder"],
+        ["xpath=//div[@id='register']/form/fieldset/div[3]/div/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Please enter your mobile number.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your mobile number."
+    }, {
+      "id": "b003e313-5b2e-4179-bfa3-d735dbaf573e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.register_password .error_span_text",
+      "targets": [
+        ["css=.register_password .error_span_text", "css:finder"],
+        ["xpath=//div[@id='register']/form/fieldset/div[4]/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Please enter your password.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your password."
+    }, {
+      "id": "507e56ba-1ccf-4160-8332-96f2601bb04f",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.user_login_desktop", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a75ef20-e0e3-47ce-b5b8-936b9ae685e6",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.user_login_desktop", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/input", "xpath:position"]
+      ],
+      "value": "warish@gmai.com"
+    }, {
+      "id": "a91e5145-6e4a-4803-ad91-eb1e44fd6ff2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Register",
+      "targets": [
+        ["linkText=Register", "linkText"],
+        ["name=register", "name"],
+        ["css=.btn_size > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Register')]", "xpath:link"],
+        ["xpath=//a[@name='register']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[6]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[9]", "xpath:href"],
+        ["xpath=//div[6]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39405f40-8a5a-4061-9818-a680f0b4c70d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.s_row:nth-child(3) .error_span_text",
+      "targets": [
+        ["css=.s_row:nth-child(3) .error_span_text", "css:finder"],
+        ["xpath=//div[@id='register']/form/fieldset/div[3]/div/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Please enter your mobile number.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your mobile number."
+    }, {
+      "id": "82919a04-af26-4a4d-bc1b-6ba5007a8841",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.register_password .error_span_text",
+      "targets": [
+        ["css=.register_password .error_span_text", "css:finder"],
+        ["xpath=//div[@id='register']/form/fieldset/div[4]/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Please enter your password.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your password."
+    }, {
+      "id": "ad60956e-fc21-4cd3-8fc7-be15d9ed4e14",
+      "comment": "",
+      "command": "click",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.s_row:nth-child(3) > .label_jump", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4fe65a8-e726-4af2-a68d-7a59d3b480f3",
+      "comment": "",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.s_row:nth-child(3) > .label_jump", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div[3]/input", "xpath:position"]
+      ],
+      "value": "0000000000"
+    }, {
+      "id": "319ff2ac-377f-43fe-99ba-a748908e08c2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Register",
+      "targets": [
+        ["linkText=Register", "linkText"],
+        ["name=register", "name"],
+        ["css=.btn_size > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Register')]", "xpath:link"],
+        ["xpath=//a[@name='register']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[6]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[9]", "xpath:href"],
+        ["xpath=//div[6]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "691bb5d8-f746-4728-b158-6929713493ac",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.register_password .error_span_text",
+      "targets": [
+        ["css=.register_password .error_span_text", "css:finder"],
+        ["xpath=//div[@id='register']/form/fieldset/div[4]/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Please enter your password.')]", "xpath:innerText"]
+      ],
+      "value": "Please enter your password."
+    }, {
+      "id": "dc31aab5-087d-4fa7-a7b1-860594861347",
+      "comment": "",
+      "command": "click",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.s_row:nth-child(3) > .label_jump", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93499f37-3e66-45a9-bf40-bbdd0dd330aa",
+      "comment": "",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.s_row:nth-child(3) > .label_jump", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div[3]/input", "xpath:position"]
+      ],
+      "value": "8888888888"
+    }, {
+      "id": "589a90d2-dfa4-4984-be5c-3661f2b771b6",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.register_password > .label_jump", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "617d4d27-6458-485e-aa58-ae02236d8717",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.register_password > .label_jump", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "1111111111"
+    }, {
+      "id": "aaba123b-27ff-4a7a-8e55-15a1d7fefd62",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Register",
+      "targets": [
+        ["linkText=Register", "linkText"],
+        ["name=register", "name"],
+        ["css=.btn_size > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Register')]", "xpath:link"],
+        ["xpath=//a[@name='register']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[6]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[9]", "xpath:href"],
+        ["xpath=//div[6]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d783f860-7ad3-4866-b070-3823def0e81b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign In",
+      "targets": [
+        ["linkText=Sign In", "linkText"],
+        ["css=#sign-in > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign In')]", "xpath:link"],
+        ["xpath=//a[@onclick='loginPopup();']", "xpath:attributes"],
+        ["xpath=//li[@id='sign-in']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[12]", "xpath:href"],
+        ["xpath=//div[4]/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e4bb57d-bf4e-4206-b42f-3d5b4b5f4825",
+      "comment": "",
+      "command": "click",
+      "target": "id=reg_tab",
+      "targets": [
+        ["id=reg_tab", "id"],
+        ["linkText=REGISTER", "linkText"],
+        ["css=#reg_tab", "css:finder"],
+        ["xpath=//a[contains(text(),'REGISTER')]", "xpath:link"],
+        ["xpath=//a[@id='reg_tab']", "xpath:attributes"],
+        ["xpath=//div[@id='loginModelBox']/div/div[2]/div/div/h2[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[7]", "xpath:href"],
+        ["xpath=//h2[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'REGISTER')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89301d3e-f518-4f6a-808e-9e9518af49aa",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.user_login_desktop", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d49e2097-888a-450e-9b7f-5d41646649a9",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.user_login_desktop", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/input", "xpath:position"]
+      ],
+      "value": "warish@gm.co"
+    }, {
+      "id": "d53e779f-13d5-4b05-a9d6-a4189b146da5",
+      "comment": "",
+      "command": "click",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.s_row:nth-child(3) > .label_jump", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c25f88b-0eb6-4679-b69c-1bc80f1a2803",
+      "comment": "",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.s_row:nth-child(3) > .label_jump", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div[3]/input", "xpath:position"]
+      ],
+      "value": "2312121212"
+    }, {
+      "id": "8696ca9b-ea88-4713-b965-a60e15c061b9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=register_with_password",
+      "targets": [
+        ["id=register_with_password", "id"],
+        ["name=register_with_password", "name"],
+        ["css=#register_with_password", "css:finder"],
+        ["xpath=//input[@id='register_with_password']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "263fc3b2-b21f-44f0-977b-bf75f32d9712",
+      "comment": "",
+      "command": "click",
+      "target": "id=register_with_password",
+      "targets": [
+        ["id=register_with_password", "id"],
+        ["name=register_with_password", "name"],
+        ["css=#register_with_password", "css:finder"],
+        ["xpath=//input[@id='register_with_password']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc6e38fe-cbea-40eb-b0ec-7925b430216e",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.register_password > .label_jump", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de0c5634-e2eb-4c3e-af27-4f42af1fd57c",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.register_password > .label_jump", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5de7f573-9874-4089-b633-636030e4d742",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.register_password > .label_jump", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "adb65fed-ae17-4f3f-8882-9bbcd433948b",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.register_password > .label_jump", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee559d65-b6c8-47e0-a860-36fdcd4988da",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.register_password > .label_jump", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Warish@123"
+    }, {
+      "id": "225536d0-559b-4825-bfe3-0163b0447b2c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Register",
+      "targets": [
+        ["linkText=Register", "linkText"],
+        ["name=register", "name"],
+        ["css=.btn_size > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Register')]", "xpath:link"],
+        ["xpath=//a[@name='register']", "xpath:attributes"],
+        ["xpath=//div[@id='register']/form/fieldset/div[6]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[9]", "xpath:href"],
+        ["xpath=//div[6]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2ffffda1-163a-4861-b18a-3171adba93e2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6ecb2c9f-b81f-4217-b973-fd6e044204f6"]
+  }],
+  "urls": ["https://bazaar.shopclues.com/"],
+  "plugins": []
+}

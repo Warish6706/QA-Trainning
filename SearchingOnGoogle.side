@@ -1,0 +1,70 @@
+{
+  "id": "390012e1-10a8-4c76-b1ba-2eaaa78e7ace",
+  "version": "2.0",
+  "name": "SearchingOnGoogle",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "88276a2b-1127-46ef-87de-89fda45c5de5",
+    "name": "SeachArtOfTesting",
+    "commands": [{
+      "id": "de2819e3-7704-43bd-ad29-53b8d3854ff9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "245a9592-5ed8-4a6b-b70a-4ea45fff778d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "794x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "551e7c85-85ad-4ee0-b60b-cc27f2066064",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ArtOfTesting"
+    }, {
+      "id": "db74e4bf-8040-4a00-af0d-a3b03b4dc926",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sbhl .wM6W7d > span",
+      "targets": [
+        ["css=.sbhl .wM6W7d > span", "css:finder"],
+        ["xpath=//div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'artoftesting')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24bd879c-69da-4747-93f5-e944fbd1ea7f",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(2) > .tF2Cxc > .yuRUbf .LC20lb",
+      "targets": [
+        ["css=div:nth-child(2) > .tF2Cxc > .yuRUbf .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'ArtOfTesting: Learn Testing Online with Free Tutorials')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9d683ec8-5b50-461c-9d9f-3c50a431a3dc",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["88276a2b-1127-46ef-87de-89fda45c5de5"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}

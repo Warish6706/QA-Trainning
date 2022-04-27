@@ -1,0 +1,214 @@
+{
+  "id": "69a973d4-1850-4b0b-98af-a8992c71649a",
+  "version": "2.0",
+  "name": "ArtOfTesting",
+  "url": "https://artoftesting.com",
+  "tests": [{
+    "id": "47dbba12-0b8c-486e-9339-7c069b7b035b",
+    "name": "artOftesting",
+    "commands": [{
+      "id": "1dce485a-32c3-4693-9568-65032fcff5ce",
+      "comment": "",
+      "command": "open",
+      "target": "/sampleSiteForSelenium",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e556a60b-617b-4842-a05b-49ce103ab263",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "990x821",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "424620ee-0f6e-4931-9d6f-b54ae024b345",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=This is a link",
+      "targets": [
+        ["linkText=This is a link", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'This is a link')]", "xpath:link"],
+        ["xpath=//article[@id='post-1089']/div/div/p[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.google.com/')]", "xpath:href"],
+        ["xpath=//p[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'This is a link')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6206",
+      "windowTimeout": 2000
+    }, {
+      "id": "1aeab781-04de-4099-be3a-a71a4fafa3c3",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1644422-a78a-42f7-8df3-64734edb8223",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6206}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9eb26324-c83b-4ec9-863b-a8932ae9f7ae",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4809cb77-e49e-4280-bb87-2e99f7e6f619",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "230d59d9-3432-4c04-b251-05d583dd6ec1",
+      "comment": "",
+      "command": "click",
+      "target": "id=fname",
+      "targets": [
+        ["id=fname", "id"],
+        ["name=firstName", "name"],
+        ["css=#fname", "css:finder"],
+        ["xpath=//input[@id='fname']", "xpath:attributes"],
+        ["xpath=//article[@id='post-1089']/div/div/p[5]/input", "xpath:idRelative"],
+        ["xpath=//p[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0782e68-2d06-491c-8858-c1d60c986317",
+      "comment": "",
+      "command": "type",
+      "target": "id=fname",
+      "targets": [
+        ["id=fname", "id"],
+        ["name=firstName", "name"],
+        ["css=#fname", "css:finder"],
+        ["xpath=//input[@id='fname']", "xpath:attributes"],
+        ["xpath=//article[@id='post-1089']/div/div/p[5]/input", "xpath:idRelative"],
+        ["xpath=//p[5]/input", "xpath:position"]
+      ],
+      "value": "Warish is testing."
+    }, {
+      "id": "cfc15379-76d0-4550-b3eb-05b5581060ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(6)",
+      "targets": [
+        ["css=p:nth-child(6)", "css:finder"],
+        ["xpath=//article[@id='post-1089']/div/div/p[5]", "xpath:idRelative"],
+        ["xpath=//p[5]", "xpath:position"],
+        ["xpath=//p[contains(.,'TextBox : ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d48928e-c4a2-4d88-b0ef-d539e8515051",
+      "comment": "",
+      "command": "type",
+      "target": "id=fname",
+      "targets": [
+        ["id=fname", "id"],
+        ["name=firstName", "name"],
+        ["css=#fname", "css:finder"],
+        ["xpath=//input[@id='fname']", "xpath:attributes"],
+        ["xpath=//article[@id='post-1089']/div/div/p[5]/input", "xpath:idRelative"],
+        ["xpath=//p[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "debd0a2c-825f-46a1-ba81-56dee6360ee5",
+      "comment": "",
+      "command": "click",
+      "target": "id=idOfButton",
+      "targets": [
+        ["id=idOfButton", "id"],
+        ["css=#idOfButton", "css:finder"],
+        ["xpath=//button[@id='idOfButton']", "xpath:attributes"],
+        ["xpath=//article[@id='post-1089']/div/div/p[6]/button", "xpath:idRelative"],
+        ["xpath=//p[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a692f256-2636-4315-a516-d36320c7ec78",
+      "comment": "",
+      "command": "click",
+      "target": "id=male",
+      "targets": [
+        ["id=male", "id"],
+        ["name=gender", "name"],
+        ["css=#male", "css:finder"],
+        ["xpath=//input[@id='male']", "xpath:attributes"],
+        ["xpath=//article[@id='post-1089']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//div/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9a66586-8028-4ec0-bd8e-03fa26de6a36",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(13) > input:nth-child(1)",
+      "targets": [
+        ["css=form:nth-child(13) > input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Automation']", "xpath:attributes"],
+        ["xpath=//article[@id='post-1089']/div/div/form[2]/input", "xpath:idRelative"],
+        ["xpath=//form[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f06a0ad2-54be-493b-8f49-43d1b6f6cbb6",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(13) > input:nth-child(3)",
+      "targets": [
+        ["css=form:nth-child(13) > input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@value='Performance']", "xpath:attributes"],
+        ["xpath=//article[@id='post-1089']/div/div/form[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//form[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "edb9b79e-3066-4698-9e6f-81498ab9e828",
+      "comment": "",
+      "command": "click",
+      "target": "id=testingDropdown",
+      "targets": [
+        ["id=testingDropdown", "id"],
+        ["css=#testingDropdown", "css:finder"],
+        ["xpath=//select[@id='testingDropdown']", "xpath:attributes"],
+        ["xpath=//article[@id='post-1089']/div/div/p[13]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "070487fe-c451-4c00-b1f6-e34d96528f08",
+      "comment": "",
+      "command": "select",
+      "target": "id=testingDropdown",
+      "targets": [],
+      "value": "label=Database Testing"
+    }, {
+      "id": "c151e8de-8fee-4453-af37-ee8674b08dc7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9891f1be-f40d-4e9f-a6c4-ea73554ec99c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["47dbba12-0b8c-486e-9339-7c069b7b035b"]
+  }],
+  "urls": ["https://artoftesting.com/"],
+  "plugins": []
+}
